@@ -1,0 +1,18 @@
+<div class="nav-bar-container">
+  <div class="nav-content">
+    <div class="logo-section">
+    </div>
+    <div class="links-sections">
+     <ul> @if(navItems && navItems.length > 0 ){
+        @for (item of navItems;track $index){
+          <li>{{item.name}}
+            @if (item.icon){
+              <i class="{{item.icon}}"></i>
+            }
+          </li>
+        }
+      }
+     </ul>
+    </div>
+  </div>
+</div>

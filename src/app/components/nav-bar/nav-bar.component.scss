@@ -1,0 +1,32 @@
+@import "../../themes/themes.scss";
+
+.nav-bar-container {
+
+  padding: 12px 0px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+
+  .nav-content {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    .links-sections ul {
+      color: $app-text-grey;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      list-style: none;
+
+    }
+
+    .logo-section {
+      width: 40px;
+      height: 40px;
+      background-image: url('/assets/images/logo.png');
+    }
+  }
+
+
+}
